@@ -5,7 +5,7 @@
 - Request logging with Morgan
 - MongoDb connection and schemas with Mongoose
 - Body Parser
-- Simple startup log script
+- Simple startup log script that logs stats from `package.json`
 
 ## Installation
 1. Clone the project with `git clone`

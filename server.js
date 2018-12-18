@@ -1,6 +1,6 @@
 // Express
 const express = require('express')
-var app = module.exports = express();
+const app = module.exports = express();
 
 // Configuration
 const config = require('./config/config.json')
@@ -16,7 +16,7 @@ let routes = require('./routes/routes')
 app.use('/api', routes)
 
 // Listen on port
-var server = app.listen(port, function () {
-    var port = server.address().port
+let server = app.listen(port, function () {
+    let port = server.address().port
     console.log("Express: Port " + port)
 })

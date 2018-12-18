@@ -1,5 +1,5 @@
 const boxen = require('boxen')
-var project = require('../package.json');
+const project = require('../package.json');
 
 console.log(
     boxen(

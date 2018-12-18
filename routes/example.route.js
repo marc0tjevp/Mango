@@ -1,5 +1,5 @@
-let routes = require('express').Router()
-let controller = require('../controllers/example.controller')
+const routes = require('express').Router()
+const controller = require('../controllers/example.controller')
 
 routes.get('/', controller.example)
 

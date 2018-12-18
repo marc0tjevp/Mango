@@ -1,5 +1,5 @@
-let routes = require('express').Router()
-let example_routes = require('./example.route')
+const routes = require('express').Router()
+const example_routes = require('./example.route')
 
 routes.get('/', (req, res) => res.status(200).json({"messsage": "Hello World!"}))
 routes.use('/example', example_routes)
