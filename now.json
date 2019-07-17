@@ -1,3 +1,6 @@
 {
-    "name": "mango"
-  }
+    "name": "mango",
+    "builds": [{
+        "use": "@now/node"
+    }]
+}
