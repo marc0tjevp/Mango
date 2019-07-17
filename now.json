@@ -1,6 +1,11 @@
 {
     "version": 2,
     "name": "mango",
+    "routes": [{
+        "src": "/",
+        "dest": "/server.js",
+        "methods": ["POST", "GET", "PUT", "DELETE"]
+    }],
     "builds": [{
         "src": "server.js",
         "use": "@now/node"
