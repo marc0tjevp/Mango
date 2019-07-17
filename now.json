@@ -1,6 +1,11 @@
 {
+    "version": 2,
     "name": "mango",
     "builds": [{
+        "src": "server.js",
+        "use": "@now/node"
+    }, {
+        "src": "*.js",
         "use": "@now/node"
     }]
 }
