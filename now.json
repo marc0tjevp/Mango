@@ -2,7 +2,7 @@
     "version": 2,
     "name": "mango",
     "routes": [{
-        "src": "/",
+        "src": "/.*",
         "dest": "/server.js",
         "methods": ["POST", "GET", "PUT", "DELETE"]
     }],
