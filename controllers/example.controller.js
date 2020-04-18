@@ -1,12 +1,12 @@
-let example = (req, res) => {
+const example = (req, res) => {
   res
     .status(200)
     .json({
-      message: "example route",
+      message: 'example route'
     })
     .end();
 };
 
 module.exports = {
-  example,
+  example
 };

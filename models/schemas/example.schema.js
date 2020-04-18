@@ -1,14 +1,15 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-var exampleSchema = new Schema({
+const { Schema } = mongoose;
+
+const exampleSchema = new Schema({
   title: String,
-  required: true,
+  required: true
 });
 
-const Example = mongoose.model("example", exampleSchema);
+const Example = mongoose.model('example', exampleSchema);
 
 module.exports = {
   Example,
-  exampleSchema,
+  exampleSchema
 };
