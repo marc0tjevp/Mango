@@ -1,7 +1,7 @@
 {
   "port": 8080,
   "databases": {
-    "mongo": "mongodb://localhost/mango",
-    "mongo-test": "mongodb://localhost/mango_test"
+    "mongo": "mongodb://mongo:27017/mango",
+    "mongo-test": "mongodb://mongo:27017/mango_test"
   }
 }
