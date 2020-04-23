@@ -1,9 +1,9 @@
 version: '2'
 services:
-  web:
+  example_service:
     build: .
     ports:
-      - '8080:8080'
+      - '8080:80'
     depends_on:
       - mongo
   mongo:
