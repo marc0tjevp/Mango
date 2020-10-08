@@ -1,7 +1,9 @@
 # Mango
 🥭 Ready to use Express setup
 
-![alt text](mango.png "Mango Header")
+<p align="center">
+  <img src="mango.png" />
+</p>
 
 ## What's this?
 Mango is a ready to use Express API setup that helps you skip the boring stuff when creating APIs.
