@@ -1,11 +1,11 @@
 const routes = require('express').Router();
-const exampleRoutes = require('./example.route');
+const personRoutes = require('./person.route');
 
 routes.get('/', (req, res) =>
   res.status(200).json({ message: 'Hello World!' })
 );
 
-routes.use('/example', exampleRoutes);
+routes.use('/person', personRoutes);
 
 routes.use('*', (req, res) =>
   res.status(404).json({ message: 'Not found' }).end()
