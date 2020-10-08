@@ -1,11 +1,11 @@
-FROM node:10
+FROM node:latest
 
 # Create app directory
 WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 
 COPY . .
 EXPOSE 8080
