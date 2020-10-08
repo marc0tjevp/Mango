@@ -14,6 +14,7 @@ Mango is a ready to use Express API setup that helps you skip the boring stuff w
 - Mongo connection and schemas with Mongoose
 - Some helpful modules e.g. body-parser
 - Simple startup script that logs info from `package.json`
+- ESLint + Prettier support.
 - Dockerfile and Docker-compose setup to get everything running instantly.
 
 ## Installation
