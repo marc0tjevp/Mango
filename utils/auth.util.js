@@ -72,13 +72,11 @@ const requireUser = (req, res, next) => {
     req.user = decodedToken.sub;
 
     // Continue request
-    next();
+    return next();
   }
 
   // No token found
-  else {
-    return res.status(401).json({ message: 'please provide token' }).end();
-  }
+  return res.status(401).json({ message: 'please provide token' }).end();
 };
 
 const requireAdmin = (req, res, next) => {
@@ -101,9 +99,7 @@ const requireAdmin = (req, res, next) => {
         .status(401)
         .json({ message: 'This endpoint requires the admin role' });
     });
-  }
-  // No token found
-  else {
+  } else {
     return res.status(401).json({ message: 'please provide token' }).end();
   }
 };
