@@ -1,5 +1,6 @@
-const config = require('../config/config.json');
 const mongoose = require('mongoose');
+const config = require('../config/config.json');
+
 const connection = process.env.MONGO || config.databases.mongo;
 
 // Connect to MongoDB

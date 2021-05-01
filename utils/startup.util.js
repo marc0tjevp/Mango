@@ -2,7 +2,7 @@ const boxen = require('boxen');
 const project = require('../package.json');
 
 console.log(
-  boxen(project.name + ' v' + project.version + '\n' + project.description, {
+  boxen(`${project.name} v${project.version}\n${project.description}`, {
     padding: {
       left: 20,
       right: 20,

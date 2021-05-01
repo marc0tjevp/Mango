@@ -23,7 +23,7 @@ const createPerson = (req, res) => {
       return res.status(200).json(p).end();
     })
     .catch((error) => {
-      return res.stats(500).json(error).end();
+      return res.status(500).json(error).end();
     });
 };
 

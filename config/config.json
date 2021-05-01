@@ -1,5 +1,6 @@
 {
   "port": 8080,
+  "secret": "someSecretPickSomethingBetter",
   "databases": {
     "mongo": "mongodb://mongo:27017/mango",
     "mongo-test": "mongodb://mongo:27017/mango_test"
